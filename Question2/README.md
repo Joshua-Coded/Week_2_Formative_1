@@ -1,3 +1,4 @@
+![Bus Route Navigation System](./images/bus-route-header-alt.svg)
 # Bus Route Navigation System
 
 ## Project Overview

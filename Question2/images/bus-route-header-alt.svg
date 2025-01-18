@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <defs>
+        <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="800" height="200" fill="url(#headerGradient)"/>
+
+    <!-- Decorative circuit-like lines -->
+    <path d="M 50 50 H 750 M 100 80 H 700 M 150 110 H 650" 
+          stroke="#ffffff33" stroke-width="1"/>
+
+    <!-- Main container -->
+    <rect x="100" y="60" width="600" height="80" 
+          rx="10" fill="#ffffff11" stroke="#ffffff44"/>
+
+    <!-- Connected nodes representing bus stops -->
+    <g stroke="white" stroke-width="2">
+        <line x1="200" y1="100" x2="600" y2="100" stroke-dasharray="5,5"/>
+        
+        <!-- Bus stops -->
+        <circle cx="200" cy="100" r="6" fill="#4fc3f7"/>
+        <circle cx="300" cy="100" r="6" fill="#4fc3f7"/>
+        <circle cx="400" cy="100" r="6" fill="#4fc3f7"/>
+        <circle cx="500" cy="100" r="6" fill="#4fc3f7"/>
+        <circle cx="600" cy="100" r="6" fill="#4fc3f7"/>
+    </g>
+
+    <!-- Title -->
+    <text x="400" y="160" 
+          text-anchor="middle" 
+          font-size="28" 
+          font-family="Arial, sans-serif" 
+          fill="white" 
+          font-weight="bold">
+        Bus Route Navigation System
+    </text>
+
+    <!-- Subtitle -->
+    <text x="400" y="185" 
+          text-anchor="middle" 
+          font-size="14" 
+          font-family="Arial, sans-serif" 
+          fill="#90caf9">
+        Doubly Linked List Implementation
+    </text>
+</svg>
