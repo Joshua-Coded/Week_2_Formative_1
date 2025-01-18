@@ -1,0 +1,48 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">
+        Time Complexity Analysis
+    </text>
+
+    <!-- Binary Tree Example -->
+    <g transform="translate(50,80)">
+        <!-- Tree connections -->
+        <line x1="100" y1="30" x2="50" y2="80" stroke="#34495e" stroke-width="2"/>
+        <line x1="100" y1="30" x2="150" y2="80" stroke="#34495e" stroke-width="2"/>
+        <line x1="50" y1="80" x2="25" y2="130" stroke="#34495e" stroke-width="2"/>
+        <line x1="50" y1="80" x2="75" y2="130" stroke="#34495e" stroke-width="2"/>
+
+        <!-- Tree nodes -->
+        <circle cx="100" cy="30" r="20" fill="#3498db"/>
+        <circle cx="50" cy="80" r="20" fill="#3498db"/>
+        <circle cx="150" cy="80" r="20" fill="#3498db"/>
+        <circle cx="25" cy="130" r="20" fill="#3498db"/>
+        <circle cx="75" cy="130" r="20" fill="#3498db"/>
+
+        <!-- Node labels -->
+        <text x="100" y="35" text-anchor="middle" fill="white">1</text>
+        <text x="50" y="85" text-anchor="middle" fill="white">2</text>
+        <text x="150" y="85" text-anchor="middle" fill="white">3</text>
+        <text x="25" y="135" text-anchor="middle" fill="white">4</text>
+        <text x="75" y="135" text-anchor="middle" fill="white">5</text>
+    </g>
+
+    <!-- Complexity Information -->
+    <g transform="translate(300,80)">
+        <text x="0" y="30" font-size="18" fill="#2c3e50">Adding New Node:</text>
+        <text x="20" y="60" font-size="16" fill="#34495e">• Average Case: O(log n)</text>
+        <text x="20" y="90" font-size="16" fill="#34495e">• Worst Case: O(n)</text>
+
+        <text x="0" y="130" font-size="18" fill="#2c3e50">Finding Node:</text>
+        <text x="20" y="160" font-size="16" fill="#34495e">• Average Case: O(log n)</text>
+        <text x="20" y="190" font-size="16" fill="#34495e">• Worst Case: O(n)</text>
+
+        <text x="0" y="230" font-size="18" fill="#2c3e50">Tree Operations:</text>
+        <text x="20" y="260" font-size="16" fill="#34495e">• Get Leaf Nodes: O(n)</text>
+        <text x="20" y="290" font-size="16" fill="#34495e">• Find Siblings: O(1)</text>
+        <text x="20" y="320" font-size="16" fill="#34495e">• Find Parent: O(1)</text>
+    </g>
+</svg>

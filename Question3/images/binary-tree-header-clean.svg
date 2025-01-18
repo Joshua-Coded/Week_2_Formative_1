@@ -1,0 +1,54 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Clean, modern background with gradient -->
+    <defs>
+        <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#203a43;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2c5364;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="800" height="200" fill="url(#headerGradient)"/>
+
+    <!-- Title on top -->
+    <text x="400" y="60" 
+          text-anchor="middle" 
+          font-size="36" 
+          font-family="Arial, sans-serif" 
+          fill="white" 
+          font-weight="bold">
+        Binary Tree Implementation
+    </text>
+
+    <!-- Subtitle -->
+    <text x="400" y="90" 
+          text-anchor="middle" 
+          font-size="16" 
+          font-family="Arial, sans-serif" 
+          fill="#a8d8ea">
+        Data Structures and Algorithms
+    </text>
+
+    <!-- Binary Tree Visual at bottom -->
+    <g transform="translate(300,90)">
+        <!-- Tree Connections -->
+        <g stroke="#4a90e2" stroke-width="2">
+            <line x1="100" y1="30" x2="50" y2="80"/>
+            <line x1="100" y1="30" x2="150" y2="80"/>
+            <line x1="50" y1="80" x2="25" y2="130"/>
+            <line x1="50" y1="80" x2="75" y2="130"/>
+            <line x1="150" y1="80" x2="125" y2="130"/>
+            <line x1="150" y1="80" x2="175" y2="130"/>
+        </g>
+
+        <!-- Tree Nodes -->
+        <g>
+            <circle cx="100" cy="30" r="12" fill="#4a90e2"/>
+            <circle cx="50" cy="80" r="12" fill="#4a90e2"/>
+            <circle cx="150" cy="80" r="12" fill="#4a90e2"/>
+            <circle cx="25" cy="130" r="12" fill="#4a90e2"/>
+            <circle cx="75" cy="130" r="12" fill="#4a90e2"/>
+            <circle cx="125" cy="130" r="12" fill="#4a90e2"/>
+            <circle cx="175" cy="130" r="12" fill="#4a90e2"/>
+        </g>
+    </g>
+</svg>
