@@ -59,7 +59,7 @@ This project implements various data structures and algorithms including QuickSo
 ### Installation
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone [https://github.com/Joshua-Coded/Week_2_Formative_1]
 
 # Navigate to project directory
 cd [project-directory]
