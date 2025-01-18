@@ -38,7 +38,7 @@ typedef struct BusStop {
 
 ## Time Complexity Analysis
 ### Visual Explanation of O(n) Complexity
-![Time Complexity Visualization](images/[complexity-diagram.svg])
+![Time Complexity Visualization](./images/complexity-diagram.svg)
 
 ### 1. Adding a New Bus Stop
 Time Complexity: O(n)
