@@ -1,153 +1,134 @@
-# Data Structures and Algorithms Project
+# Data Structures and Algorithms Implementation
 
-## Project Overview
-This project implements various data structures and algorithms including QuickSort, Doubly Linked Lists, Binary Trees, and Binary Search Trees (BST) in C.
+![Project Overview](images/algorithm-analysis.svg)
 
-## Project Structure
-```
-.
-├── include/              # Header files
-├── src/                  # Source files
-│   ├── quicksort/        # Question 1 implementation
-│   ├── bus_route/        # Question 2 implementation
-│   ├── binary_tree/      # Question 3 implementation
-│   └── bst/              # Question 4 implementation
-├── data/                 # Data files
-│   └── students.txt      # Student records
-└── tests/                # Test files
-```
+A comprehensive implementation of fundamental data structures and algorithms in C, focusing on sorting, linked lists, and tree structures.
 
-## Features
+## Questions Overview
 
-### 1. Student Record Sorting (QuickSort)
-- Reads student records from text file
-- Implements QuickSort algorithm
-- Sorts based on grades in ascending order
-- Outputs sorted data to new file
-- Time complexity analysis included
+### Question 1: QuickSort Implementation
+- Sorts student records by grades
+- Time Complexity: O(n log n) average case
+- File-based I/O operations
+- Complete sorting solution with analysis
 
-### 2. Bus Route Navigation System
-- Implements doubly linked list for bus stops
-- Forward navigation with 3-second delays
-- Backward navigation with 3-second delays
-- Auto-stop at terminal points
-- Time complexity analysis for operations
+### Question 2: Bus Route System
+- Doubly linked list implementation
+- Interactive navigation system
+- 3-second delay between stops
+- Bidirectional traversal
 
-### 3. Binary Tree Operations
-- Builds binary tree from 20 integers
-- Features:
-  * Root node retrieval
-  * Leaf nodes identification
-  * Sibling node finding
-  * Parent node lookup
-  * Grandchildren retrieval
-- Time complexity analysis
+### Question 3: Binary Tree Operations
+- Complete binary tree implementation
+- Multiple tree operations:
+  * Root node access
+  * Leaf node identification
+  * Sibling relationships
+  * Parent-child relationships
+  * Grandchildren access
 
-### 4. Student BST Implementation
-- Creates BST from student records
-- Name-based search functionality
+### Question 4: Binary Search Tree
+- Efficient student record searching
+- Last name-based indexing
 - Comparative analysis with linear search
-- Time complexity documentation
+- Advanced tree operations
 
-## Getting Started
+## Directory Structure
+```
+Week_2_Formative_1/
+├── Question1/            # QuickSort Implementation
+│   ├── data/
+│   │   └── students.txt
+│   ├── include/
+│   ├── src/
+│   ├── Makefile
+│   └── README.md
+├── Question2/            # Bus Route Implementation
+├── Question3/            # Binary Tree Implementation
+└── Question4/            # BST Implementation
+```
 
-### Prerequisites
-- GCC Compiler
-- Make utility
-- Unix-like environment
+## Build Instructions
 
-### Installation
+Each question has its own build process:
+
 ```bash
-# Clone the repository
-git clone [https://github.com/Joshua-Coded/Week_2_Formative_1]
-
-# Navigate to project directory
-cd [project-directory]
-
-# Build all programs
+# For each question (1-4):
+cd Question[N]
+make clean
 make all
-```
-
-### Running the Programs
-
-1. QuickSort Implementation:
-```bash
-./bin/quicksort data/students.txt
-```
-
-2. Bus Route System:
-```bash
-./bin/bus_route
-```
-
-3. Binary Tree Operations:
-```bash
-./bin/binary_tree
-```
-
-4. Student BST:
-```bash
-./bin/student_bst
-```
-
-## Usage Examples
-
-### Student Record Sorting
-```c
-// Input file format (students.txt):
-John Doe 85
-Jane Smith 92
-...
-
-// Run the program:
-./bin/quicksort data/students.txt
-```
-
-### Bus Route Navigation
-```c
-// Example interaction:
-Enter direction (F/B): F
-Starting route...
-Stop 1: Downtown
-[3 seconds delay]
-Stop 2: University Ave
-...
-```
-
-### Binary Tree Operations
-```c
-// Example usage:
-Enter node value to find siblings: 15
-Siblings of 15: 12, 18
-```
-
-### BST Operations
-```c
-// Example search:
-Enter student last name: Smith
-Found: Smith, Jane - Grade: 92
 ```
 
 ## Time Complexity Analysis
 
-1. QuickSort:
-- Average case: O(n log n)
-- Worst case: O(n²)
+### 1. QuickSort (Question 1)
+```
+Average Case: O(n log n)
+- Balanced partitioning
+- Efficient for large datasets
+- Optimal comparison-based sorting
 
-2. Doubly Linked List:
-- Insertion at end: O(1)
-- Traversal: O(n)
+Worst Case: O(n²)
+- Rare with good pivot selection
+- Not typical in practice
+```
 
-3. Binary Tree:
-- Node insertion: O(h), where h is height
-- Searching: O(h)
+### 2. Bus Route (Question 2)
+```
+Adding New Stop: O(n)
+- Must traverse to end
+- Linear time operation
+- Cannot be optimized without structural changes
+```
 
-4. BST:
-- Search: O(log n) average case
-- Insertion: O(log n) average case
+### 3. Binary Tree (Question 3)
+```
+Node Operations: O(1)
+- Direct access to relationships
+- Constant time for most operations
 
-## Authors
-[Joshua Alana]
+Tree Traversal: O(n)
+- Must visit all nodes
+- Complete coverage required
+```
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
+### 4. BST (Question 4)
+```
+Search Operations: O(log n)
+- Efficient for large datasets
+- Balanced tree assumption
+- Significant improvement over linear search
+```
+
+## Testing
+
+Each implementation includes comprehensive tests:
+- Functionality verification
+- Edge case handling
+- Performance validation
+- Memory management
+
+## Features Highlight
+
+1. **Modular Design**
+   - Separate compilation units
+   - Clear interfaces
+   - Reusable components
+
+2. **Error Handling**
+   - Input validation
+   - Memory management
+   - File operation safety
+
+3. **Documentation**
+   - Detailed READMEs
+   - Code comments
+   - Usage examples
+
+4. **Performance**
+   - Optimized implementations
+   - Efficient algorithms
+   - Scalable solutions
+
+## Author
+Joshua Alana
