@@ -1,7 +1,5 @@
 # Data Structures and Algorithms Implementation
 
-![Project Overview](images/algorithm-analysis.svg)
-
 A comprehensive implementation of fundamental data structures and algorithms in C, focusing on sorting, linked lists, and tree structures.
 
 ## Questions Overview
